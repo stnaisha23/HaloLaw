@@ -12,10 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--<activity
+            android:name=".Register"
+            android:exported="false" />-->
+        <!--
+        <activity
             android:name=".Sign"
-            android:exported="true" />-->
+            android:exported="true" />
+        -->
         <activity android:name=".DetailActivity" />
-        <activity android:name=".Sign"
+        <activity
+            android:name=".Register"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

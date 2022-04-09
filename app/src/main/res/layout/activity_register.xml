@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".Sign">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bggradient">
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/glamourluxurybold"
+                android:text="Welcome\nto HaLaw."
+                android:textColor="@color/gold"
+                android:textSize="36sp" />
+
+            <EditText
+                android:layout_marginTop="200dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector"
+                android:hint="Phone, username or email"
+                android:textColor="@color/carbon_white"
+                android:textColorHint="#BDBDBD"/>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector"
+                android:hint="Password"
+                android:textColor="@color/carbon_white"
+                android:textColorHint="#BDBDBD"/>
+            <LinearLayout
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#BDBDBD"
+                    android:layout_height="wrap_content"
+                    android:text="have an account?"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppinsregular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/carbon_white"
+                    android:layout_height="wrap_content"
+                    android:text=" Sign In"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppinsemibold"/>
+            </LinearLayout>
+            <carbon.widget.Button
+                android:layout_marginTop="10dp"
+                app:carbon_cornerRadius="4dp"
+                android:layout_gravity="center"
+                android:background="@color/gold"
+                android:layout_width="318dp"
+                android:layout_height="50dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppinsemibold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

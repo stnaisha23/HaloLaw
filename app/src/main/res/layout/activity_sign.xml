@@ -114,7 +114,7 @@
             android:layout_gravity="center"
             android:background="@color/gold"
             android:layout_width="318dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:text="Sign In"
             android:textAllCaps="false"
             android:fontFamily="@font/poppinsemibold"/>
