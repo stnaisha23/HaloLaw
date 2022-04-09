@@ -38,7 +38,7 @@
                             android:paddingTop="20dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Find your lawyer"
+                            android:text="@string/namaApp"
                             android:textSize="36sp"
                             android:fontFamily="@font/glamourluxurybold"
                             android:textColor="@color/gold"/>
