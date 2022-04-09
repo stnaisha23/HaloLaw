@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/ic_launcher_background.xml" value="0.127" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_detail.xml" value="0.10925925925925926" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/adapter_movie.xml" value="0.25" />
         <entry key="..\:/kotlin-android-retrofit-master/kotlin-android-retrofit-master/app/src/main/res/layout/activity_detail.xml" value="0.16018518518518518" />
         <entry key="..\:/kotlin-android-retrofit-master/kotlin-android-retrofit-master/app/src/main/res/layout/activity_main.xml" value="0.16018518518518518" />
         <entry key="..\:/kotlin-android-retrofit-master/kotlin-android-retrofit-master/app/src/main/res/layout/adapter_movie.xml" value="0.1" />

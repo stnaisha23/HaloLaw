@@ -12,7 +12,6 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
         val intentTitle = intent.getStringExtra("intent_title")
         val intentImage = intent.getStringExtra("intent_image")
-        supportActionBar!!.title = intentTitle
         Glide.with(this)
             .load(intentImage )
             .placeholder(R.drawable.img_placeholder)
