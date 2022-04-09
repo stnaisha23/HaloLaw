@@ -15,7 +15,7 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
     private val TAG: String = "MainActivity"
 
-    private lateinit var movieAdapter: MovieAdapter
+    private lateinit var pengacaraAdapter: MovieAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView(){
-        movieAdapter = MovieAdapter(arrayListOf(), object : MovieAdapter.OnAdapterListener {
+        pengacaraAdapter = MovieAdapter(arrayListOf(), object : MovieAdapter.OnAdapterListener {
             override fun onClick(result: MainModel.Result) {
                 startActivity(
                     Intent(this@MainActivity, DetailActivity::class.java)
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         })
         recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
-            adapter = movieAdapter
+            adapter = pengacaraAdapter
         }
     }
 
@@ -73,6 +73,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun showResult(results: MainModel) {
         for (result in results.result) printLog( "title: ${result.title}" )
-        movieAdapter.setData( results.result )
+        pengacaraAdapter.setData( results.result )
     }
 }

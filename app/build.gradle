@@ -43,6 +43,11 @@ dependencies {
     // Material Design
     implementation 'com.google.android.material:material:1.2.1'
 
+    api 'tk.zielony:carbon:0.16.0.1'
+
+    //blurr
+    compile 'com.fivehundredpx:blurringview:1.0.0'
+
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
@@ -51,4 +56,8 @@ dependencies {
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+}
+
+repositories {
+    maven { url 'https://github.com/500px/500px-android-blur/raw/master/releases/' }
 }
