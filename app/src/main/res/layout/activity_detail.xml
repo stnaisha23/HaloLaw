@@ -1,18 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity"
+    android:background="@color/bg"
+    >
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/imageView"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        tools:src="@drawable/elp"
-        app:civ_border_width="2dp"
-        app:civ_border_color="@color/gold"/>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:background="@drawable/bggradient"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
 
-</ScrollView>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"/>
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:fontFamily="@font/glamourluxurybold"
+                android:textSize="24sp"
+                android:textColor="@color/gold"/>
+        </carbon.widget.LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+    <carbon.widget.ConstraintLayout
+        android:layout_width="140dp"
+        android:layout_height="140dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView"
+            android:layout_width="127dp"
+            android:layout_height="127dp"
+            tools:src="@drawable/elp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/gold"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </carbon.widget.ConstraintLayout>
+    </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="@color/gold"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="24sp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama kerja"
+            android:textColor="@color/carbon_white"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="14sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

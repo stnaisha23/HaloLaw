@@ -3,12 +3,18 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/glamourluxurybold" /><font
+        android:font="@font/glamourluxurybold" />
+    <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/poppinslight" /><font
+        android:font="@font/poppinslight" />
+    <font
         android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/poppinsregular" />
+<font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/poppinsmedium" />
 
 </font-family>
