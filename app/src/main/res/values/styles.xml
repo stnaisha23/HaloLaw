@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/gold</item>
         <item name="colorPrimaryDark">@color/carbon_black</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/carbon_white</item>
+        <item name="iconTint">@color/carbon_white</item>
     </style>
 
 </resources>

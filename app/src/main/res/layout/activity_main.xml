@@ -69,6 +69,7 @@
                         android:textColor="@color/carbon_white"/>
                     <SearchView
                         android:id="@+id/searchView"
+                        app:theme="@style/AppTheme"
                         android:layout_width="match_parent"
                         android:layout_height="36dp"
                         android:layout_marginTop="15dp"
@@ -76,6 +77,7 @@
                         android:elevation="2dp"
                         android:iconifiedByDefault="false"
                         android:queryHint="Cari Nama"
+                        android:searchHintIcon="@color/carbon_white"
                         />
                     <LinearLayout
                         android:layout_width="wrap_content"

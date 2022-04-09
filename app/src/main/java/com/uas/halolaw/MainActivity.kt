@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.uas.halolaw.retrofit.ApiService
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
@@ -15,17 +16,22 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
     private val TAG: String = "MainActivity"
 
-    private lateinit var pengacaraAdapter: MovieAdapter
+    private lateinit var pengacaraAdapter: PengacaraAdapter
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupRecyclerView()
         getDataFromApi()
+
+
+
     }
 
     private fun setupRecyclerView(){
-        pengacaraAdapter = MovieAdapter(arrayListOf(), object : MovieAdapter.OnAdapterListener {
+        pengacaraAdapter = PengacaraAdapter(arrayListOf(), object : PengacaraAdapter.OnAdapterListener {
             override fun onClick(result: MainModel.Result) {
                 startActivity(
                     Intent(this@MainActivity, DetailActivity::class.java)
@@ -35,8 +41,10 @@ class MainActivity : AppCompatActivity() {
             }
         })
         recyclerView.apply {
+
             layoutManager = LinearLayoutManager(context)
             adapter = pengacaraAdapter
+
         }
     }
 
