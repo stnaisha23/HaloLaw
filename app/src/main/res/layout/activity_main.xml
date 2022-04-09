@@ -35,10 +35,12 @@
 
                         <TextView
                             android:id="@+id/judul"
+                            android:paddingTop="20dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Find your lawyer"
-                            android:textSize="24sp"
+                            android:textSize="36sp"
+                            android:fontFamily="@font/glamourluxurybold"
                             android:textColor="@color/gold"/>
 
                         <ImageView
@@ -48,25 +50,28 @@
                     </LinearLayout>
 
                     <TextView
+                        android:paddingTop="8dp"
                         android:id="@+id/subjudul"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="sub judul"
-                        android:textSize="24sp"
+                        android:text="High-quality"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="18sp"
                         android:textColor="@color/carbon_white"/>
 
                     <TextView
                         android:id="@+id/subjudul2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="sub judul"
-                        android:textSize="24sp"
+                        android:text="Legal consultancy"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppinslight"
                         android:textColor="@color/carbon_white"/>
                     <SearchView
                         android:id="@+id/searchView"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="15dp"
                         android:background="@drawable/selector"
                         android:elevation="2dp"
                         android:queryHint="Cari Nama"
@@ -74,17 +79,19 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="24dp"
                         android:orientation="horizontal">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Corporate Law"
+                            android:fontFamily="@font/poppinslight"
                             android:textSize="18sp" android:textColor="@color/carbon_white"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="see all"
+                            android:fontFamily="@font/poppinsregular"
                             android:textSize="12sp" android:textColor="@color/carbon_white"/>
                     </LinearLayout>
                 </LinearLayout>
