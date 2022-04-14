@@ -63,4 +63,17 @@ class Register : AppCompatActivity() {
                 }
             }
     }
+
+    override fun onStart() {
+        super.onStart()
+        //jika user sudah login maka tidak perlu login lagi
+        //akan diarahkan langsung ke aktivity
+        if (auth.currentUser != null){
+            Intent(this@Register,MainActivity::class.java).also{
+                //supaya mengharuskan keluar dengan tombol logout
+                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(it)
+            }
+        }
+    }
 }

@@ -57,6 +57,7 @@
             android:textSize="18sp"
             android:fontFamily="@font/poppinslight"/>
             <EditText
+                android:id="@+id/etEmail"
                 android:layout_marginTop="140dp"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -64,10 +65,11 @@
                 android:layout_width="320dp"
                 android:layout_height="40dp"
                 android:background="@drawable/selector"
-                android:hint="Phone, username or email"
+                android:hint="Email"
                 android:textColor="@color/carbon_white"
                 android:textColorHint="#BDBDBD"/>
             <EditText
+                android:id="@+id/etPsw"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -109,17 +111,18 @@
                 android:textSize="12sp"
                 android:fontFamily="@font/poppinsemibold"/>
         </LinearLayout>
+
         <carbon.widget.Button
             android:id="@+id/btnSignIn"
-            android:layout_marginTop="10dp"
-            app:carbon_cornerRadius="4dp"
-            android:layout_gravity="center"
-            android:background="@color/gold"
             android:layout_width="318dp"
             android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/gold"
+            android:fontFamily="@font/poppinsemibold"
             android:text="Sign In"
             android:textAllCaps="false"
-            android:fontFamily="@font/poppinsemibold"/>
+            app:carbon_cornerRadius="4dp" />
 
     </LinearLayout>
 </LinearLayout>

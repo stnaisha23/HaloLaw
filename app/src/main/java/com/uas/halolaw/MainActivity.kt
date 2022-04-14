@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.uas.halolaw.retrofit.ApiService
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_register.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -16,13 +17,22 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
     private val TAG: String = "MainActivity"
 
+
     private lateinit var pengacaraAdapter: PengacaraAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        btnmenuProfile.setOnClickListener{
+            Intent(this@MainActivity, Profileuser::class.java).also {
+                startActivity(it)
+            }
+        }
         setupRecyclerView()
         getDataFromApi()
+
+
     }
 
     private fun setupRecyclerView(){
