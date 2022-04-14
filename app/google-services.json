@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63013513700",
+    "project_id": "halolaw-2eba1",
+    "storage_bucket": "halolaw-2eba1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63013513700:android:86a1709776497285e6bff1",
+        "android_client_info": {
+          "package_name": "com.uas.HaloLaw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63013513700-obl1so027ftl0ib05poo8vvp0c02p6bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAywt4BytLsenkHhH2GBCREPv6KyqIxnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63013513700-obl1so027ftl0ib05poo8vvp0c02p6bq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
