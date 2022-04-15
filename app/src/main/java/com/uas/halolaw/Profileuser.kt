@@ -1,8 +1,12 @@
 package com.uas.halolaw
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
+import android.util.AttributeSet
+import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profileuser.*
 import kotlinx.android.synthetic.main.activity_register.*
@@ -38,5 +42,12 @@ class Profileuser : AppCompatActivity() {
                 startActivity(it)
             }
         }
+        btnEdit.setOnClickListener{
+            Intent(this@Profileuser, fragment::class.java).also {
+                startActivity(it)
+            }
+        }
     }
+
+
 }
