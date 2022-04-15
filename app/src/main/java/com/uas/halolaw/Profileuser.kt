@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profileuser.*
+import kotlinx.android.synthetic.main.activity_register.*
 
 class Profileuser : AppCompatActivity() {
 
@@ -22,6 +23,18 @@ class Profileuser : AppCompatActivity() {
             //sebelumnya jika menekan log out
             Intent(this@Profileuser, Sign::class.java).also {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(it)
+            }
+        }
+
+        /*btnLawbot.setOnClickListener{
+            Intent(this@Profileuser, Lawbot::class.java).also {
+                startActivity(it)
+            }
+        }*/
+
+        btnInfoApp.setOnClickListener{
+            Intent(this@Profileuser, InfoApp::class.java).also {
                 startActivity(it)
             }
         }

@@ -8,19 +8,14 @@
     tools:context=".DetailActivity"
     android:background="@color/bg"
     >
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:background="@drawable/bggradient"
-        android:layout_height="match_parent">
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/bggradient3">
             <carbon.widget.LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_margin="20dp">
                 <ImageView
@@ -31,200 +26,49 @@
                     android:layout_marginLeft="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Profile"
+                    android:text="Info App"
                     android:fontFamily="@font/glamourluxurybold"
                     android:textSize="24sp"
                     android:textColor="@color/gold"/>
             </carbon.widget.LinearLayout>
             <LinearLayout
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                <carbon.widget.ConstraintLayout
-                    android:layout_width="140dp"
-                    android:layout_height="140dp">
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="127dp"
-                        android:layout_height="127dp"
-                        tools:src="@drawable/elp"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="@color/gold"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/pen"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
-                </carbon.widget.ConstraintLayout>
-            </LinearLayout>
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nama"
-                android:textColor="@color/gold"
-                android:fontFamily="@font/poppinsmedium"
-                android:textSize="24sp"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="email"
-                android:textColor="@color/carbon_white"
-                android:fontFamily="@font/poppinsregular"
-                android:textSize="14sp"
-                android:layout_gravity="center"/>
-
-            //card profile
-            <LinearLayout
                 android:layout_margin="20dp"
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/selector"
+                android:background="@drawable/lineout"
                 android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="left"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infoapp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12sp"
+                    android:textColor="@color/carbon_white"/>
                 <LinearLayout
-                    android:layout_marginBottom="20dp"
+                    android:id="@+id/btnLawbot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="220dp"
                     android:orientation="horizontal">
                     <ImageView
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/profile"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="20sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nama : "
-                            android:fontFamily="@font/poppinslight"
-                            android:textSize="12sp"
-                            android:textColor="@color/carbon_white"/>
-                        <TextView
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="20sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nama"
-                            android:fontFamily="@font/poppinslight"
-                            android:textSize="12sp"
-                            android:textColor="@color/carbon_white"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/email"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="20sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Email : "
-                            android:fontFamily="@font/poppinslight"
-                            android:textSize="12sp"
-                            android:textColor="@color/carbon_white"/>
-                        <TextView
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="20sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Email"
-                            android:fontFamily="@font/poppinslight"
-                            android:textSize="12sp"
-                            android:textColor="@color/carbon_white"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-                <LinearLayout android:layout_marginBottom="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/password"/>
-                    <TextView
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="20sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Password"
-                        android:fontFamily="@font/poppinslight"
-                        android:textSize="12sp"
-                        android:textColor="@color/carbon_white"/>
-                </LinearLayout>
-                <LinearLayout android:layout_marginBottom="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/bot"/>
                     <TextView
                         android:layout_gravity="center"
-                        android:layout_marginLeft="20sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LawBot"
-                        android:fontFamily="@font/poppinslight"
-                        android:textSize="12sp"
-                        android:textColor="@color/carbon_white"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/info"/>
-                    <TextView
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="20sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Info App"
-                        android:fontFamily="@font/poppinslight"
-                        android:textSize="12sp"
-                        android:textColor="@color/carbon_white"/>
+                        android:text="  LawBot "
+                        android:textColor="@color/carbon_white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinslight"/>
                 </LinearLayout>
             </LinearLayout>
-            <Button
-                android:id="@+id/btnLogOut"
-                android:layout_margin="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/selector"
-                android:fontFamily="@font/poppinsemibold"
-                android:text="Log Out"
-                android:textColor="@color/carbon_white"
-                android:textAllCaps="false" />
         </LinearLayout>
-    </ScrollView>
 </androidx.appcompat.widget.LinearLayoutCompat>
