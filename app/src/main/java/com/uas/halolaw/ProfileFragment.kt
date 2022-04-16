@@ -81,7 +81,6 @@ class ProfileFragment : Fragment() {
         btnEdit.setOnClickListener{
             btnUpdate.visibility = View.VISIBLE
             fragName.requestFocus()
-            fragName.setText("")
         }
 
         //btn logout
