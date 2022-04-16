@@ -7,10 +7,12 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.fragment_profile.*
@@ -18,15 +20,8 @@ import java.io.ByteArrayOutputStream
 
 @Suppress("DEPRECATION")
 class ProfileFragment : Fragment() {
-
-    companion object{
-        const val REQUEST_CAMERA = 100
-    }
- private lateinit var imageUri : Uri
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private lateinit var imageUri : Uri
+    private val REQUEST_IMAGE_CAPTURE = 100
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,47 +34,55 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         profileimage.setOnClickListener{
-            intentCamera()
+            takePictureIntent()
         }
     }
 
-    @SuppressLint("QueryPermissionsNeeded")
-    private fun intentCamera() {
-        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also{intent ->
-            activity?.packageManager?.let {
-                intent.resolveActivity(it).also {
-                    startActivityForResult(intent, REQUEST_CAMERA)
-                }
+    private fun takePictureIntent() {
+        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also {
+            pictureIntent->
+            pictureIntent.resolveActivity(activity?.packageManager!!)?.also {
+                startActivityForResult(pictureIntent, REQUEST_IMAGE_CAPTURE)
+                Log.d("p","di ambil")
             }
         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_CAMERA && requestCode == RESULT_OK){
-            val imgBitmap  = data?.extras?.get("data") as Bitmap
-            uploadImage(imgBitmap)
+        if (requestCode==REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
+            val imageBitmap = data?.extras?.get("data") as Bitmap
+
+            uploadImageAndSaveUri(imageBitmap)
+        }else{
+            Log.d("p","gagal")
         }
     }
 
-    private fun uploadImage(imgBitmap: Bitmap) {
+    private fun uploadImageAndSaveUri(bitmap: Bitmap) {
         val baos = ByteArrayOutputStream()
-        val ref = FirebaseStorage.getInstance().reference.child("img/${FirebaseAuth.getInstance().currentUser?.uid}")
+        val storageRef = FirebaseStorage.getInstance().reference
+            .child("pics/${FirebaseAuth.getInstance().currentUser?.uid}")
 
-        imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
         val image = baos.toByteArray()
 
-        ref.putBytes(image)
-            .addOnCompleteListener{
-                if (it.isSuccessful){
-                    ref.downloadUrl.addOnCompleteListener{
-                        it.result?.let {
-imageUri = it
-                            profileimage.setImageBitmap(imgBitmap)
-                        }
+        val upload = storageRef.putBytes(image)
+
+        progressBar.visibility=View.VISIBLE
+        upload.addOnCompleteListener{
+            uploadTask ->
+            progressBar.visibility=View.INVISIBLE
+            if (uploadTask.isSuccessful){
+                storageRef.downloadUrl.addOnCompleteListener{urlTask->
+                    urlTask.result?.let{
+                        imageUri = it
+                        Toast.makeText(context, "Foto profile diperbarui!", Toast.LENGTH_LONG).show()
+                        profileimage.setImageBitmap(bitmap)
                     }
                 }
             }
-
+        }
     }
+
 }

@@ -41,13 +41,30 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="center">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/profileimage"
-                        android:layout_width="127dp"
-                        android:layout_height="127dp"
-                        android:src="@drawable/plus"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/person"
                         app:civ_border_width="2dp"
                         app:civ_border_color="@color/gold"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/profileimage"
+                        app:layout_constraintStart_toStartOf="@+id/profileimage"
+                        app:layout_constraintTop_toTopOf="@+id/profileimage" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </LinearLayout>
 
             //card profile

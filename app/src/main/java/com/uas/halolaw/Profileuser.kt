@@ -25,7 +25,7 @@ class Profileuser : AppCompatActivity() {
             auth.signOut()
             //flags berfunsgi untuk tidak bisa kembali ke halaman
             //sebelumnya jika menekan log out
-            Intent(this@Profileuser, Sign::class.java).also {
+            Intent(this@Profileuser, LandingPage::class.java).also {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(it)
             }
