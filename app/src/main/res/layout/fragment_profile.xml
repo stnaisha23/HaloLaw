@@ -166,12 +166,14 @@ android:visibility="invisible"
                             android:layout_height="wrap_content">
                             <ImageView
                                 android:id="@+id/icverified"
+                                android:visibility="invisible"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/ic_verified"/>
                             <ImageView
                                 android:id="@+id/icUnverified"
                                 android:layout_width="wrap_content"
+                                android:visibility="invisible"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/ic_unverified"/>
                         </androidx.constraintlayout.widget.ConstraintLayout>

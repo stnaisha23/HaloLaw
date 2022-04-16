@@ -90,7 +90,7 @@ class ProfileFragment : Fragment() {
             startActivity(myIntent)
         }
 
-        //save button
+        //save button/update
         btnUpdate.setOnClickListener{
 
             val image = when{
@@ -119,6 +119,15 @@ class ProfileFragment : Fragment() {
                 }
             btnUpdate.visibility = View.INVISIBLE
             fragName.clearFocus()
+        }
+        icUnverified.setOnClickListener{
+            user?.sendEmailVerification()?.addOnCompleteListener{
+                if (it.isSuccessful){
+                    Toast.makeText(activity,"Verified Email send!", Toast.LENGTH_LONG).show()
+                }else{
+                    Toast.makeText(activity,"Verified Email Failed!", Toast.LENGTH_LONG).show()
+                }
+            }
         }
     }
 
