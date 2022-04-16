@@ -25,7 +25,6 @@
         <activity
             android:name=".Sign"
             android:exported="false" />
-        <activity android:name=".Profileuser" />
         <activity
             android:name=".Register"
             android:exported="false" />

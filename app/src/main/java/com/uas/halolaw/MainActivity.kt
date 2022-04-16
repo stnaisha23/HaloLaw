@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnmenuProfile.setOnClickListener{
-            Intent(this@MainActivity, Profileuser::class.java).also {
+            Intent(this@MainActivity, fragment::class.java).also {
                 startActivity(it)
             }
         }

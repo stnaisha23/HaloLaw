@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ProfileFragment"
+    tools:context=".DetailActivity"
     >
 
     <ScrollView
@@ -15,7 +15,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <carbon.widget.LinearLayout
                 android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Setting"
+                    android:text="Profile"
                     android:fontFamily="@font/glamourluxurybold"
                     android:textSize="24sp"
                     android:textColor="@color/gold"/>
@@ -41,31 +41,48 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="center">
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                <carbon.widget.ConstraintLayout
+                    android:layout_width="140dp"
+                    android:layout_height="140dp">
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/profileimage"
-                        android:layout_width="110dp"
-                        android:layout_height="110dp"
+                        android:layout_width="127dp"
+                        android:layout_height="127dp"
                         android:src="@drawable/person"
                         app:civ_border_width="2dp"
                         app:civ_border_color="@color/gold"/>
 
                     <ProgressBar
+android:visibility="invisible"
                         android:id="@+id/progressBar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:visibility="invisible"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@+id/profileimage"
                         app:layout_constraintEnd_toEndOf="@+id/profileimage"
                         app:layout_constraintStart_toStartOf="@+id/profileimage"
                         app:layout_constraintTop_toTopOf="@+id/profileimage" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
 
+                    <ImageView
+                        android:id="@+id/btnEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/pen"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </carbon.widget.ConstraintLayout>
             </LinearLayout>
+            <TextView
+                android:id="@+id/NameUser"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textColor="@color/gold"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
 
             //card profile
             <LinearLayout
@@ -98,15 +115,17 @@
                             android:fontFamily="@font/poppinslight"
                             android:textSize="12sp"
                             android:textColor="@color/carbon_white"/>
-                        <TextView
+                        <EditText
+                            android:id="@+id/fragName"
                             android:layout_gravity="center"
                             android:layout_marginLeft="20sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nama"
                             android:fontFamily="@font/poppinslight"
                             android:textSize="12sp"
+                            android:hint="Nama Lengkap"
                             android:textColor="@color/carbon_white"/>
+
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
@@ -133,18 +152,34 @@
                             android:textSize="12sp"
                             android:textColor="@color/carbon_white"/>
                         <TextView
+                            android:id="@+id/fragEmail"
                             android:layout_gravity="center"
                             android:layout_marginLeft="20sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Email"
                             android:fontFamily="@font/poppinslight"
                             android:textSize="12sp"
                             android:textColor="@color/carbon_white"/>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/icverified"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_verified"/>
+                            <ImageView
+                                android:id="@+id/icUnverified"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_unverified"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
-                <LinearLayout
+                <LinearLayout android:layout_marginBottom="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -163,8 +198,73 @@
                         android:textSize="12sp"
                         android:textColor="@color/carbon_white"/>
                 </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnLawbot"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bot"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LawBot"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="12sp"
+                        android:textColor="@color/carbon_white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnInfoApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/info"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Info App"
+                        android:fontFamily="@font/poppinslight"
+                        android:textSize="12sp"
+                        android:textColor="@color/carbon_white"/>
+                </LinearLayout>
+                <carbon.widget.Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    app:carbon_cornerRadius="4dp" />
             </LinearLayout>
 
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector"
+                android:fontFamily="@font/poppinsemibold"
+                android:text="Log Out"
+                android:textColor="@color/carbon_white"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 </androidx.appcompat.widget.LinearLayoutCompat>
