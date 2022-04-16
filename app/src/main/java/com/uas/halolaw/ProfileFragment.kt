@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
@@ -28,6 +29,7 @@ class ProfileFragment : Fragment() {
     private lateinit var imageUri : Uri
     private val REQUEST_IMAGE_CAPTURE = 100
     private lateinit var auth: FirebaseAuth
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -75,11 +77,18 @@ class ProfileFragment : Fragment() {
             startActivity(myIntent)
         }
 
-
         //btn edit profile
         btnEdit.setOnClickListener{
             btnUpdate.visibility = View.VISIBLE
             fragName.requestFocus()
+            fragName.setText("")
+        }
+
+        //btn logout
+        btnLogOut.setOnClickListener{
+            auth.signOut()
+            val myIntent = Intent(activity, LandingPage::class.java)
+            startActivity(myIntent)
         }
 
         //save button
