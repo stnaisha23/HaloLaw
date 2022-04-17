@@ -74,8 +74,8 @@ class ProfileFragment : Fragment() {
             startActivity(myIntent)
         }
 
-        //button update psw
-        fragEmail.setOnClickListener{
+        //button update email
+        btnUpdateEmail.setOnClickListener{
             val myIntent = Intent(activity, tvFragmentEditEmail::class.java)
             startActivity(myIntent)
         }

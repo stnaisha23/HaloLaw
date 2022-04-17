@@ -32,7 +32,7 @@
                     android:textColor="@color/gold"/>
             </carbon.widget.LinearLayout>
             <LinearLayout
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -148,7 +148,6 @@ android:visibility="invisible"
                             android:textSize="14sp"
                             android:textColor="@color/carbon_white"/>
                         <TextView
-                            android:hint="Update Email"
                             android:focusableInTouchMode="false"
                             android:id="@+id/fragEmail"
                             android:layout_gravity="center"
@@ -168,15 +167,30 @@ android:visibility="invisible"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/ic_verified"/>
-                            <ImageView
-                                android:id="@+id/icUnverified"
-                                android:layout_width="wrap_content"
-                                android:visibility="invisible"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_unverified"/>
+
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/btnUpdateEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/update"/>
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/icUnverified"
+                        android:layout_width="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_unverified"/>
+                </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/btnChangePassword"
                     android:layout_marginBottom="20dp"
@@ -258,6 +272,7 @@ android:visibility="invisible"
             <Button
                 android:id="@+id/btnLogOut"
                 android:layout_margin="20dp"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
