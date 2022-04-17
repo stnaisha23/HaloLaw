@@ -9,31 +9,28 @@
     android:background="@color/bg"
     >
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:background="@drawable/bggradient"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <LinearLayout
 android:background="@drawable/bggradient3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <carbon.widget.LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_margin="20dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/back"/>
                 <TextView
-                    android:layout_marginLeft="30dp"
+                    android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Profile"
                     android:fontFamily="@font/glamourluxurybold"
-                    android:textSize="24sp"
+                    android:textSize="36sp"
                     android:textColor="@color/gold"/>
             </carbon.widget.LinearLayout>
         <LinearLayout
@@ -147,7 +144,7 @@ android:background="@drawable/bggradient3"
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:src="@drawable/lineprofile"
                         android:layout_marginRight="10dp"/>
                     <LinearLayout
@@ -170,16 +167,14 @@ android:background="@drawable/bggradient3"
                         <TextView
                             android:layout_marginTop="20dp"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:fontFamily="@font/poppinsregular"
-                            android:text="Asosiasi Konsultan Hukum Pasar Modal
-(Himpunan Konsultan Hukum Pasar Modal /
-HKHPM)"
+                            android:text="@string/pd1"
                             android:textColor="@color/carbon_white"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
-    </ScrollView>
+    </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -18,17 +18,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_margin="20dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/back"/>
                 <TextView
-                    android:layout_marginLeft="30dp"
+                    android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Info App"
                     android:fontFamily="@font/glamourluxurybold"
-                    android:textSize="24sp"
+                    android:textSize="36sp"
                     android:textColor="@color/gold"/>
             </carbon.widget.LinearLayout>
             <LinearLayout
@@ -45,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/infoapp"
                     android:fontFamily="@font/poppinslight"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:textColor="@color/carbon_white"/>
                 <LinearLayout
                     android:id="@+id/btnLawbot"

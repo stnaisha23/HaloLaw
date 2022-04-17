@@ -22,11 +22,11 @@ class DetailActivity : AppCompatActivity() {
             .into(imageView)
 
         //btn sms
-        /*btnSms.setOnClickListener{
+        btnSms.setOnClickListener{
             val sendIntent = Intent(Intent.ACTION_VIEW)
             sendIntent.data = Uri.parse("sms:")
-            sendIntent.putExtra("sms_body", String);
-        }*/
+            startActivity(sendIntent);
+        }
 
         //btn ig
         btnIg.setOnClickListener{

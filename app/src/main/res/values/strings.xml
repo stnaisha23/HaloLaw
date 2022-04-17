@@ -6,4 +6,5 @@
     <string name="infoapp">Halaw adalah kepanjangan dari Halo Law, sebuah aplikasi yang memberi informasi profil pengacara konsultan hukum yang dapat dihubungi. User diharuskan membuat akun terlebih dahulu untuk login ke dalam aplikasi. Di dalam aplikasi user dapat mencari pengacara berdasarkan nama, juga dapat menemukan pengacara berdasarkan bidang hukum. Selain itu user juga dapat membaca profil singkat dari pengacara dan dapat menghubungi pengacara tersebut melalui sosial media yang tersedia.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pd1">Asosiasi Konsultan Hukum Pasar Modal (Himpunan Konsultan Hukum Pasar Modal / HKHPM)</string>
 </resources>
