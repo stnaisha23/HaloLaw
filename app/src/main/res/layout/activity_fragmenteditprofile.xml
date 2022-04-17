@@ -1,7 +1,9 @@
 <!-- res/layout/example_activity.xml -->
 <androidx.fragment.app.FragmentContainerView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_container_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:name="com.uas.halolaw.ProfileFragment" />
+    android:name="com.uas.halolaw.ProfileFragment"
+    tools:ignore="MissingDefaultResource" />
