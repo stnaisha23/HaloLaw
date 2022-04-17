@@ -50,6 +50,13 @@ class Sign : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        //reset psw
+        btnForgotPSW.setOnClickListener{
+            Intent(this@Sign, ResetPasswordActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 
     private fun signInUser(email: String, psw: String) {
