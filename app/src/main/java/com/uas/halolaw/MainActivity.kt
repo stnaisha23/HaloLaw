@@ -6,10 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.uas.halolaw.retrofit.ApiService
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_register.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnmenuProfile.setOnClickListener{
-            Intent(this@MainActivity, fragment::class.java).also {
+            Intent(this@MainActivity, tvFragmentEditProfile::class.java).also {
                 startActivity(it)
             }
         }

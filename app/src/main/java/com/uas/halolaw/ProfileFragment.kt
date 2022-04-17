@@ -10,8 +10,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
@@ -19,7 +17,6 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_sign.*
 import kotlinx.android.synthetic.main.fragment_profile.*
 import java.io.ByteArrayOutputStream
 
@@ -74,6 +71,12 @@ class ProfileFragment : Fragment() {
         //button info App
         btnInfoApp.setOnClickListener{
             val myIntent = Intent(activity, InfoApp::class.java)
+            startActivity(myIntent)
+        }
+
+        //button update psw
+        fragEmail.setOnClickListener{
+            val myIntent = Intent(activity, tvFragmentEditEmail::class.java)
             startActivity(myIntent)
         }
 

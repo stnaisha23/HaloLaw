@@ -16,15 +16,18 @@
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/font/font.xml" value="0.1685185185185185" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_detail.xml" value="0.2" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_fragment.xml" value="0.1" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_fragment_edit_email.xml" value="0.1" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_info_app.xml" value="0.24351851851851852" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_landing_page.xml" value="0.264" />
-        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_main.xml" value="0.536" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_profileuser.xml" value="0.2" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_sign.xml" value="0.264" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/adapter_movie.xml" value="0.25" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/adapter_pengacara.xml" value="0.1" />
-        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_change_password.xml" value="0.1" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_profile.xml" value="0.4" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_update_email.xml" value="0.264" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/horizontallist.xml" value="0.25" />
         <entry key="..\:/kotlin-android-retrofit-master/kotlin-android-retrofit-master/app/src/main/res/layout/activity_detail.xml" value="0.16018518518518518" />
         <entry key="..\:/kotlin-android-retrofit-master/kotlin-android-retrofit-master/app/src/main/res/layout/activity_main.xml" value="0.16018518518518518" />

@@ -13,12 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".fragment"
+            android:name=".tvFragmentEditEmail"
             android:exported="false" />
         <activity
-            android:name=".ProfileFragment"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
+            android:name=".tvFragmentEditProfile"
+            android:exported="false" />
         <activity
             android:name=".InfoApp"
             android:exported="false" />
