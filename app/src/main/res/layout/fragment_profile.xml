@@ -60,8 +60,8 @@ android:visibility="invisible"
 
                     <ImageView
                         android:id="@+id/btnEdit"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="31dp"
+                        android:layout_height="33dp"
                         android:layout_marginEnd="12dp"
                         android:layout_marginBottom="12dp"
                         android:src="@drawable/pen"
