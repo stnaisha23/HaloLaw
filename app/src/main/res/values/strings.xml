@@ -2,7 +2,7 @@
     <string name="app_name">HaloLaw</string>
     <string name="pendidikan">
         Sarjana Hukum Universitas Indonesia (1988)\nAmerican Litigation di School of Law-University of California at Los Angeles (UCLA) setara Master of Arts (1994)\nMagister Hukum Universitas Indonesia (2002)</string>
-    <string name="namaApp">Find your lawyer</string>
+    <string name="namaApp">HaLaw</string>
     <string name="infoapp">Halaw adalah kepanjangan dari Halo Law, sebuah aplikasi yang memberi informasi profil pengacara konsultan hukum yang dapat dihubungi. User diharuskan membuat akun terlebih dahulu untuk login ke dalam aplikasi. Di dalam aplikasi user dapat mencari pengacara berdasarkan nama, juga dapat menemukan pengacara berdasarkan bidang hukum. Selain itu user juga dapat membaca profil singkat dari pengacara dan dapat menghubungi pengacara tersebut melalui sosial media yang tersedia.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
