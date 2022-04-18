@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsmedium"
-            android:text="Forgot Password"
+            android:text="Lupa Password?"
             android:textColor="#BDBDBD"
             android:textSize="12sp" />
         <LinearLayout
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:textColor="#BDBDBD"
                 android:layout_height="wrap_content"
-                android:text="Don’t have an account?"
+                android:text="Belum punya akun?"
                 android:textSize="12sp"
                 android:fontFamily="@font/poppinsregular"/>
             <TextView
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:textColor="@color/carbon_white"
                 android:layout_height="wrap_content"
-                android:text=" Register"
+                android:text=" Daftar"
                 android:textSize="12sp"
                 android:fontFamily="@font/poppinsemibold"/>
         </LinearLayout>
@@ -117,7 +117,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/gold"
             android:fontFamily="@font/poppinsemibold"
-            android:text="Sign In"
+            android:text="Masuk"
             android:textAllCaps="false"
             app:carbon_cornerRadius="4dp" />
 

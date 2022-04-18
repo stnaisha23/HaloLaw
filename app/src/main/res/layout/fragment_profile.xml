@@ -190,29 +190,6 @@ android:visibility="invisible"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_unverified"/>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/btnChangePassword"
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/password"/>
-                    <TextView
-
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="20sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Change Password"
-                        android:fontFamily="@font/poppinslight"
-                        android:textSize="14sp"
-                        android:textColor="@color/carbon_white"/>
-                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/btnLawbot"
                     android:layout_marginBottom="20dp"
@@ -279,7 +256,7 @@ android:visibility="invisible"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/selector"
                 android:fontFamily="@font/poppinsemibold"
-                android:text="Log Out"
+                android:text="Keluar"
                 android:textColor="@color/carbon_white"
                 android:textAllCaps="false" />
         </LinearLayout>

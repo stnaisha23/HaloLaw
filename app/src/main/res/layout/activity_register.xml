@@ -60,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:textColor="#BDBDBD"
                     android:layout_height="wrap_content"
-                    android:text="have an account?"
+                    android:text="Sudah punya akun?"
                     android:textSize="12sp"
                     android:fontFamily="@font/poppinsregular"/>
                 <TextView
@@ -68,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:textColor="@color/carbon_white"
                     android:layout_height="wrap_content"
-                    android:text=" Sign In"
+                    android:text=" Masuk"
                     android:textSize="12sp"
                     android:fontFamily="@font/poppinsemibold"/>
             </LinearLayout>
@@ -80,7 +80,7 @@
                 android:background="@color/gold"
                 android:layout_width="318dp"
                 android:layout_height="50dp"
-                android:text="Register"
+                android:text="Daftar"
                 android:textAllCaps="false"
                 android:fontFamily="@font/poppinsemibold"/>
 

@@ -135,7 +135,7 @@ android:background="@drawable/bggradient3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/poppinsregular"
-                    android:text="Experience"
+                    android:text="Pengelaman"
                     android:textColor="@color/gold"
                     android:textSize="18sp" />
                 <LinearLayout

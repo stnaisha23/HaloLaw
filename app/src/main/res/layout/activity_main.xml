@@ -92,7 +92,7 @@
             android:drawableLeft="@drawable/ic_search"
             android:drawablePadding="12dp"
             android:fontFamily="@font/poppinsmedium"
-            android:hint="Search By Name"
+            android:hint="Masukkan nama"
             android:paddingStart="13dp"
             android:textColorHint="@color/carbon_white" />
     </com.google.android.material.appbar.AppBarLayout>
@@ -185,7 +185,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppinslight"
-                            android:text="Lawyers"
+                            android:text="Pengacara"
                             android:textColor="@color/carbon_white"
                             android:textSize="18sp"
                             app:layout_constraintStart_toStartOf="parent"
@@ -195,7 +195,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppinsregular"
-                            android:text="see all"
+                            android:text="Lainnya..."
                             android:textColor="@color/carbon_white"
                             android:textSize="12sp"
                             app:layout_constraintEnd_toEndOf="parent"
