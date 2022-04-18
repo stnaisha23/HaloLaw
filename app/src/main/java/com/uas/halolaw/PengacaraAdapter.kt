@@ -6,10 +6,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.adapter_pengacara.view.*
+import java.util.*
+import java.util.logging.Filter
 import kotlin.collections.ArrayList
 
 class PengacaraAdapter (var results: ArrayList<MainModel.Result>, val listener: OnAdapterListener):
     RecyclerView.Adapter<PengacaraAdapter.ViewHolder>() {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder (
             LayoutInflater.from( parent.context ).inflate( R.layout.adapter_pengacara,
@@ -30,6 +33,8 @@ class PengacaraAdapter (var results: ArrayList<MainModel.Result>, val listener: 
             .into(holder.view.imageView)
         holder.view.setOnClickListener { listener.onClick( result ) }
     }
+
+
 
     class ViewHolder(val view: View): RecyclerView.ViewHolder(view)
 

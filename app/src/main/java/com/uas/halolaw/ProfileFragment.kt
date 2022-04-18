@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
+import com.uas.halolaw.ui.bot
 import kotlinx.android.synthetic.main.fragment_profile.*
 import java.io.ByteArrayOutputStream
 
@@ -79,6 +80,12 @@ class ProfileFragment : Fragment() {
             val myIntent = Intent(activity, tvFragmentEditEmail::class.java)
             startActivity(myIntent)
         }
+
+        btnLawbot.setOnClickListener{
+            val myIntent = Intent(activity, bot::class.java)
+            startActivity(myIntent)
+        }
+
 
         //btn edit profile
         btnEdit.setOnClickListener{

@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bggradient3"
     tools:context=".UpdateEmailFragment">
 
     <LinearLayout
         android:id="@+id/layoutPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="20dp"
         android:animateLayoutChanges="true"
         android:gravity="center"
         android:orientation="vertical"
@@ -25,22 +26,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Masukkan Password Anda"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="20sp"
+            android:textColor="@color/carbon_white"
             android:textAlignment="center" />
 
         <EditText
+            android:background="@color/carbon_white"
+            android:layout_marginTop="20dp"
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="8dp"
             android:hint="Password"
+            android:textColorHint="@color/carbon_grey_900"
+            android:padding="10dp"
+            android:fontFamily="@font/poppinsmedium"
             android:inputType="textPassword"
             android:singleLine="true" />
-
         <Button
             android:id="@+id/btnAuth"
-            android:layout_width="170dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/selector"
             android:text="Confirm Password"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
@@ -50,7 +60,7 @@
         android:id="@+id/layoutEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="20dp"
         android:animateLayoutChanges="true"
         android:gravity="center"
         android:orientation="vertical"
@@ -64,13 +74,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Masukkan Email Baru"
+            android:textColor="@color/carbon_white"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="20sp"
             android:textAlignment="center" />
 
         <EditText
+            android:padding="10dp"
+            android:background="@color/carbon_white"
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColorHint="@color/carbon_grey_900"
             android:layout_height="wrap_content"
-            android:hint="New Email"
+            android:layout_marginTop="20dp"
+            android:hint="example@email.com"
             android:inputType="textEmailAddress"
             android:singleLine="true" />
 
@@ -80,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
-            android:background="@color/colorAccent"
+            android:background="@drawable/selector"
             android:text="Update"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
