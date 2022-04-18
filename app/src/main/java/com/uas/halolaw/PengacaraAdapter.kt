@@ -18,6 +18,7 @@ class PengacaraAdapter (var results: ArrayList<MainModel.Result>, val listener: 
 
     override fun getItemCount() = results.size
 
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val result = results[position]
         holder.view.textView.text = result.title
@@ -41,4 +42,6 @@ class PengacaraAdapter (var results: ArrayList<MainModel.Result>, val listener: 
     interface OnAdapterListener {
         fun onClick(result: MainModel.Result)
     }
+
+
 }

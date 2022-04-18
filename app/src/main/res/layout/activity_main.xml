@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +8,97 @@
     android:orientation="vertical"
     android:background="@color/bg"
     >
-    <ScrollView
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:background="@drawable/bggradient3"
+        android:id="@+id/appBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/glamourluxurybold"
+                    android:text="@string/namaApp"
+                    android:textColor="@color/gold"
+                    android:textSize="36sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.291" />
+
+                <ImageView
+                    android:id="@+id/btnmenuProfile"
+                    android:layout_width="38dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toBottomOf="@+id/judul"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/judul"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.857" />
+
+                <TextView
+                    android:id="@+id/subjudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:paddingTop="8dp"
+                    android:text="High-quality"
+                    android:textColor="@color/carbon_white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/subjudul2"
+                    app:layout_constraintTop_toBottomOf="@+id/judul" />
+
+                <TextView
+                    android:id="@+id/subjudul2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="Legal consultancy"
+                    android:textColor="@color/carbon_white"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/judul"
+                    app:layout_constraintTop_toBottomOf="@+id/subjudul" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="Search By Name"
+            android:paddingStart="13dp"
+            android:textColorHint="@color/carbon_white" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:background="@drawable/bggradient"
         android:layout_height="match_parent">
         <LinearLayout
@@ -20,7 +109,6 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp">
@@ -28,69 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/judul"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/glamourluxurybold"
-                            android:text="@string/namaApp"
-                            android:textColor="@color/gold"
-                            android:textSize="36sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.971" />
-
-                        <ImageView
-                            android:id="@+id/btnmenuProfile"
-                            android:layout_width="35dp"
-                            android:layout_height="33dp"
-                            android:src="@drawable/profile"
-                            app:layout_constraintBottom_toTopOf="@+id/judul"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.978"
-                            app:layout_constraintStart_toEndOf="@+id/judul"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.0" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <TextView
-                        android:paddingTop="8dp"
-                        android:id="@+id/subjudul"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="High-quality"
-                        android:fontFamily="@font/poppinslight"
-                        android:textSize="18sp"
-                        android:textColor="@color/carbon_white"/>
-
-                    <TextView
-                        android:id="@+id/subjudul2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Legal consultancy"
-                        android:textSize="18sp"
-                        android:fontFamily="@font/poppinslight"
-                        android:textColor="@color/carbon_white"/>
-                    <SearchView
-                        android:id="@+id/searchView"
-                        app:theme="@style/AppTheme"
-                        android:layout_width="match_parent"
-                        android:layout_height="36dp"
-                        android:layout_marginTop="15dp"
-                        android:background="@drawable/selector"
-                        android:elevation="2dp"
-                        android:iconifiedByDefault="false"
-                        android:queryHint="Cari Nama"
-                        android:searchHintIcon="@color/carbon_white"
-                        />
                     <!--<LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -147,11 +173,11 @@
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </LinearLayout>
                     </HorizontalScrollView>-->
-                    
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -206,13 +232,14 @@
                     android:id="@+id/progressBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    />
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.15" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
-    </ScrollView>
-</androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -21,5 +21,7 @@ class LandingPage : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+
     }
 }

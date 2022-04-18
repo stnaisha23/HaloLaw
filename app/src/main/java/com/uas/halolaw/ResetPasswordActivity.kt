@@ -7,7 +7,6 @@ import android.util.Patterns
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_reset_password.*
-import kotlinx.android.synthetic.main.activity_sign.*
 
 class ResetPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
