@@ -21,7 +21,7 @@ import com.uas.halolaw.R
 import com.uas.halolaw.fragmentview.tvFragmentEditEmail
 import com.uas.halolaw.ui.InfoApp
 import com.uas.halolaw.ui.LandingPage
-import com.uas.halolaw.ui.bot
+import com.uas.halolaw.ui.MainLawbot
 import kotlinx.android.synthetic.main.fragment_profile.*
 import java.io.ByteArrayOutputStream
 
@@ -86,7 +86,7 @@ class ProfileFragment : Fragment() {
         }
 
         btnLawbot.setOnClickListener{
-            val myIntent = Intent(activity, bot::class.java)
+            val myIntent = Intent(activity, MainLawbot::class.java)
             startActivity(myIntent)
         }
 

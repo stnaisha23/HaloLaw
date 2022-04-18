@@ -10,10 +10,14 @@
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/bggradient2.xml" value="0.1225" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/bggradient3.xml" value="0.1945" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/gradientprofile.xml" value="0.226" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.161" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/ic_launcher_background.xml" value="0.127" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/ic_search.xml" value="0.1745" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/lineout.xml" value="0.1945" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/receive_round_box.xml" value="0.161" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/round_button.xml" value="0.161" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/selector.xml" value="0.1" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/send_round_box.xml" value="0.161" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/font/font.xml" value="0.1685185185185185" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_bot.xml" value="0.1" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_detail.xml" value="0.2" />
@@ -33,6 +37,7 @@
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_update_email.xml" value="0.1" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/horizontallist.xml" value="0.25" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/message_item.xml" value="0.25" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/menu/seacrhmenu.xml" value="0.2" />
         <entry key="..\:/kotlin-android-retrofit-master/kotlin-android-retrofit-master/app/src/main/res/layout/activity_detail.xml" value="0.16018518518518518" />
         <entry key="..\:/kotlin-android-retrofit-master/kotlin-android-retrofit-master/app/src/main/res/layout/activity_main.xml" value="0.16018518518518518" />

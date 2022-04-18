@@ -13,9 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.bot"
-            android:exported="false" />
-        <activity
             android:name=".ui.ResetPasswordActivity"
             android:exported="false"></activity>
         <activity
@@ -26,6 +23,9 @@
             android:exported="false" />
         <activity
             android:name=".ui.InfoApp"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainLawbot"
             android:exported="false" />
         <activity
             android:name=".ui.Sign"

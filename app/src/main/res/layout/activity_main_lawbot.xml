@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient3"
+    tools:context=".ui.MainLawbot">
+
+
+    <LinearLayout
+        android:id="@+id/ll_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/abuabu"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_message"
+            android:inputType="textShortMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight=".5"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/abuabu"
+            android:hint="Kirim pesan..."
+            android:textColorHint="@color/grey"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_send_24"
+            android:background="@drawable/round_button"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_layout_bar"
+        android:layout_below="@+id/dark_divider"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        tools:itemCount="20"
+        tools:listitem="@layout/message_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#42A5F5"
+        android:id="@+id/dark_divider"/>
+
+
+</RelativeLayout>
