@@ -1,4 +1,4 @@
-package com.uas.halolaw
+package com.uas.halolaw.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.uas.halolaw.R
 import kotlinx.android.synthetic.main.activity_register.*
 
 class Register : AppCompatActivity() {
@@ -53,7 +54,7 @@ class Register : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email,psw)
             .addOnCompleteListener(this){
                 if(it.isSuccessful){
-                    Intent(this@Register,MainActivity::class.java).also{
+                    Intent(this@Register, MainActivity::class.java).also{
                         //supaya mengharuskan keluar dengan tombol logout
                         it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(it)
@@ -69,7 +70,7 @@ class Register : AppCompatActivity() {
         //jika user sudah login maka tidak perlu login lagi
         //akan diarahkan langsung ke aktivity
         if (auth.currentUser != null){
-            Intent(this@Register,MainActivity::class.java).also{
+            Intent(this@Register, MainActivity::class.java).also{
                 //supaya mengharuskan keluar dengan tombol logout
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(it)

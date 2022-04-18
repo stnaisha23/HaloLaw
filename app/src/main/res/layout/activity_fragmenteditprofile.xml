@@ -5,5 +5,5 @@
     android:id="@+id/fragment_container_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:name="com.uas.halolaw.ProfileFragment"
+    android:name="com.uas.halolaw.fragment.ProfileFragment"
     tools:ignore="MissingDefaultResource" />

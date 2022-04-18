@@ -1,4 +1,4 @@
-package com.uas.halolaw
+package com.uas.halolaw.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,8 @@ import android.widget.Toast
 import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.uas.halolaw.R
+import com.uas.halolaw.ui.Sign
 import kotlinx.android.synthetic.main.fragment_update_email.*
 import kotlinx.android.synthetic.main.fragment_update_email.etEmail
 

@@ -1,4 +1,4 @@
-package com.uas.halolaw
+package com.uas.halolaw.fragment
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
@@ -17,6 +17,10 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
+import com.uas.halolaw.R
+import com.uas.halolaw.fragmentview.tvFragmentEditEmail
+import com.uas.halolaw.ui.InfoApp
+import com.uas.halolaw.ui.LandingPage
 import com.uas.halolaw.ui.bot
 import kotlinx.android.synthetic.main.fragment_profile.*
 import java.io.ByteArrayOutputStream

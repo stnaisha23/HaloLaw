@@ -1,4 +1,4 @@
-package com.uas.halolaw
+package com.uas.halolaw.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.uas.halolaw.MainModel
+import com.uas.halolaw.PengacaraAdapter
+import com.uas.halolaw.R
+import com.uas.halolaw.fragmentview.tvFragmentEditProfile
 import com.uas.halolaw.retrofit.ApiService
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call

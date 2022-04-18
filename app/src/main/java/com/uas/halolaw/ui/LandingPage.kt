@@ -1,8 +1,9 @@
-package com.uas.halolaw
+package com.uas.halolaw.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.uas.halolaw.R
 import kotlinx.android.synthetic.main.activity_landing_page.*
 
 class LandingPage : AppCompatActivity() {

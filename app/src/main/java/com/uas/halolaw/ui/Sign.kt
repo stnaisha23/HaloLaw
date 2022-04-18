@@ -1,4 +1,4 @@
-package com.uas.halolaw
+package com.uas.halolaw.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.uas.halolaw.R
 import kotlinx.android.synthetic.main.activity_sign.*
 import kotlinx.android.synthetic.main.activity_sign.btnRegister
 import kotlinx.android.synthetic.main.activity_sign.btnSignIn
@@ -63,7 +64,7 @@ class Sign : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email,psw)
             .addOnCompleteListener(this){
                 if(it.isSuccessful){
-                    Intent(this@Sign, MainActivity::class.java).also {intent ->
+                    Intent(this@Sign, MainActivity::class.java).also { intent ->
                         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                     }
@@ -78,7 +79,7 @@ class Sign : AppCompatActivity() {
         //pengecekan jika user sudah login akan di tujukan
         //lansung ke main menu di dalam APP
         if (auth.currentUser != null){
-            Intent(this@Sign, MainActivity::class.java).also {intent ->
+            Intent(this@Sign, MainActivity::class.java).also { intent ->
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
             }
