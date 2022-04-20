@@ -44,11 +44,26 @@ object BotResponse {
             }
 
             //Apa kabar?
-                message.contains("apa") && message.contains("kabar")->{
+            message.contains("apa") && message.contains("kabar")->{
                 when (random) {
                     0 -> "Lawbot sangat baik!"
                     1 -> "Lawbot sedang lapar..."
                     2 -> "Sangat baik, bagaimana dengan mu?"
+                    else -> "error"
+                }
+            }
+
+            //ma rab?
+            message.contains("laparga?") ->{
+                when (random) {
+                    0 -> "iya"
+                    else -> "error"
+                }
+            }
+
+            message.contains("mau")&& message.contains("mknapa?") ->{
+                when (random) {
+                    0 -> "tserah"
                     else -> "error"
                 }
             }
