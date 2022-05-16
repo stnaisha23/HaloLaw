@@ -19,20 +19,21 @@
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/selector.xml" value="0.1" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/drawable/send_round_box.xml" value="0.161" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/font/font.xml" value="0.1685185185185185" />
-        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_bot.xml" value="0.1" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_bot.xml" value="0.2" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_detail.xml" value="0.2" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_fragment.xml" value="0.1" />
-        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_fragment_edit_email.xml" value="0.1" />
-        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_fragmenteditprofile.xml" value="0.1648148148148148" />
-        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_info_app.xml" value="0.24351851851851852" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_fragment_edit_email.xml" value="0.22314814814814815" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_fragmenteditprofile.xml" value="0.22314814814814815" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_info_app.xml" value="0.264" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_landing_page.xml" value="0.264" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_main.xml" value="0.22314814814814815" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_main_lawbot.xml" value="0.25" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_profileuser.xml" value="0.2" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_reset_password.xml" value="0.23697916666666666" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/activity_sign.xml" value="0.264" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/adapter_movie.xml" value="0.25" />
-        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/adapter_pengacara.xml" value="0.1" />
+        <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/adapter_pengacara.xml" value="0.22314814814814815" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_change_password.xml" value="0.1" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/SEMESTER6/PBM/HaloLaw/app/src/main/res/layout/fragment_update_email.xml" value="0.1" />

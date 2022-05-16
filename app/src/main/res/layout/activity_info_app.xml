@@ -34,13 +34,18 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/lineout"
                 android:orientation="vertical">
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logohl"/>
                 <TextView
                     android:layout_gravity="left"
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/infoapp"
-                    android:fontFamily="@font/poppinslight"
+                    android:fontFamily="@font/poppinsmedium"
                     android:textSize="14sp"
                     android:textColor="@color/carbon_white"/>
                 <LinearLayout
@@ -66,5 +71,15 @@
                         android:fontFamily="@font/poppinslight"/>
                 </LinearLayout>
             </LinearLayout>
+            <TextView
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gold"
+                android:layout_gravity="center"
+                android:text="Version 1.0"/>
         </LinearLayout>
+
+
 </androidx.appcompat.widget.LinearLayoutCompat>

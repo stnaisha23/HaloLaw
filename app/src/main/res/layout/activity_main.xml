@@ -81,7 +81,7 @@
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-        <EditText
+        <!--<EditText
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="46dp"
@@ -94,7 +94,7 @@
             android:fontFamily="@font/poppinsmedium"
             android:hint="Masukkan nama"
             android:paddingStart="13dp"
-            android:textColorHint="@color/carbon_white" />
+            android:textColorHint="@color/carbon_white" />-->
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -133,18 +133,6 @@
                             android:textSize="18sp"
                             app:layout_constraintStart_toStartOf="parent"
                             tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinsregular"
-                            android:text="Lainnya..."
-                            android:textColor="@color/carbon_white"
-                            android:textSize="12sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.982"
-                            app:layout_constraintStart_toEndOf="@+id/textView2"
-                            app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
