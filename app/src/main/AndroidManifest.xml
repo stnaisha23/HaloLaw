@@ -13,8 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.MainLawbot"
+            android:exported="false" />
+        <activity
             android:name=".ui.ResetPasswordActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".fragmentview.tvFragmentEditEmail"
             android:exported="false" />
@@ -23,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".ui.InfoApp"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MainLawbot"
             android:exported="false" />
         <activity
             android:name=".ui.Sign"
@@ -41,6 +41,10 @@
             android:exported="false" />
         <activity
             android:name=".ui.LandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Splashscreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

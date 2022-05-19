@@ -33,8 +33,6 @@ class MainActivity : AppCompatActivity() {
         }
         setupRecyclerView()
         getDataFromApi()
-
-
     }
 
     private fun setupRecyclerView(){
@@ -51,7 +49,6 @@ class MainActivity : AppCompatActivity() {
 
             layoutManager = LinearLayoutManager(context)
             adapter = pengacaraAdapter
-
         }
     }
 
