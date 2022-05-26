@@ -53,20 +53,7 @@ object BotResponse {
                 }
             }
 
-            //ma rab?
-            message.contains("laparga?") ->{
-                when (random) {
-                    0 -> "iya"
-                    else -> "error"
-                }
-            }
 
-            message.contains("mau")&& message.contains("mknapa?") ->{
-                when (random) {
-                    0 -> "tserah"
-                    else -> "error"
-                }
-            }
 
             //Waktu sekarang?
             message.contains("jam") && message.contains("?")-> {
